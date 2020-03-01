@@ -4,6 +4,7 @@
   "description": "Learning React",
   "keywords": [],
   "main": "src/index.js",
+  "homepage": "https://princebillygk.github.io/React-practise-google-keep-frontend/",
   "dependencies": {
     "@material-ui/core": "4.9.5",
     "@material-ui/icons": "4.9.1",
@@ -12,13 +13,16 @@
     "react-scripts": "3.2.0"
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "typescript": "3.3.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
